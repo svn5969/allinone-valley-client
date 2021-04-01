@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -9,13 +10,26 @@ import {
 } from "react-router-dom";
 import AddProduct from './Components/AddProduct/AddProduct';
 import Home from './Components/Home/Home';
+import SignIn from './Components/SignIn/SignIn';
+import CheckOut from './Components/CheckOut/CheckOut';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Order from './Components/Order/Order';
+import Header from './Components/Headers/Headers';
+
+
+export const UserContext = createContext();
+
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-  
+    <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
+    
        <Router>
+       <Header></Header>
       <div>
-        <nav>
+      
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -23,15 +37,31 @@ function App() {
             <li>
               <Link to="/addProduct">Add Product</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/users">Users</Link>
-            </li> */}
+            </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <Switch>
           <Route path="/addProduct">
          <AddProduct></AddProduct>
+          </Route>
+
+          <Route path="/order">
+        <Order></Order>
+          </Route>
+
+          <PrivateRoute path="/checkout/:_id">
+       <CheckOut></CheckOut>
+          </PrivateRoute>
+
+          <Route path="/signin">
+        <SignIn></SignIn>
+          </Route>
+
+          <Route  path="/home">
+           <Home></Home>
           </Route>
          
           <Route exact path="/">
@@ -40,7 +70,9 @@ function App() {
         </Switch>
       </div>
     </Router>
-  
+
+    </UserContext.Provider>
+
   );
 }
 

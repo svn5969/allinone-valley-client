@@ -17,7 +17,7 @@ const AddProduct = () => {
    }
    const url = `http://localhost:8000/addProduct`
 
-   console.log(productData);
+
    fetch(url,{
        method: 'POST',
        headers: {
