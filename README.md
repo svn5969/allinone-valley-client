@@ -29,16 +29,13 @@ For Routing:
 npm install react-router-dom
 and put all the routers in app.js files
 
-Call API from : https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League  which is found from this site : https://www.thesportsdb.com/api.php
+Call API from : My own created API from mongodb database
  
  fetch this in Home.js 
 
  The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
- ### Facility
-  You can explore the teams and know the details by clicking explore button on
-  You can also visits the Teams social links 
  
  ### Responsive 
  This site is Responsive
@@ -48,8 +45,4 @@ You will also see any lint errors in the console.
  You can also visits the Teams social links  dynamically
 
  # Deployment
- Initially i deploy it in netlify.com
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-router-svn5969
+ Initially deploy in firebase
