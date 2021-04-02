@@ -1,71 +1,55 @@
-# Getting Started with Create React App
+## Project Title
+AllinOne Valley
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Site Link : "https://allinone-valley.web.app/"
 
-## Available Scripts
+## installing
 
-In the project directory, you can run:
+In the project directory, I run:
 
-### `npm start`
+ create a react-app by using
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ npx create-react-app as AllinOne
+  
+install react bootstrap by
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css' file included in my src/index.js
 
-The page will reload if you make edits.\
+install react font awesome by 
+  npm i --save @fortawesome/fontawesome-svg-core
+  npm install --save @fortawesome/free-solid-svg-icons
+  npm install --save @fortawesome/react-fontawesome
+
+and  import this files on the where i import the font awesome
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+For Routing:
+npm install react-router-dom
+and put all the routers in app.js files
+
+Call API from : https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League  which is found from this site : https://www.thesportsdb.com/api.php
+ 
+ fetch this in Home.js 
+
+ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+ ### Facility
+  You can explore the teams and know the details by clicking explore button on
+  You can also visits the Teams social links 
+ 
+ ### Responsive 
+ This site is Responsive
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ #### Social links
+ use socials links on the club details footer section
+ You can also visits the Teams social links  dynamically
 
-### `npm run build`
+ # Deployment
+ Initially i deploy it in netlify.com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# full-stack-client-svn5969
+# react-router-svn5969
