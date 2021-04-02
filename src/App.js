@@ -27,22 +27,6 @@ function App() {
     
        <Router>
        <Header></Header>
-      <div>
-      
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/addProduct">Add Product</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
-
         <Switch>
           <PrivateRoute path="/addProduct">
          <AddProduct></AddProduct>
@@ -70,7 +54,7 @@ function App() {
            <Home></Home>
           </Route>
         </Switch>
-      </div>
+  
     </Router>
 
     </UserContext.Provider>

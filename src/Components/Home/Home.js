@@ -10,7 +10,7 @@ const Home = () => {
    
 
     useEffect(()=>{
-           fetch('http://localhost:8000/products')
+           fetch('https://infinite-shelf-56932.herokuapp.com/products')
            .then(res=>res.json())
            .then(data=>setProducts(data))
     },[])

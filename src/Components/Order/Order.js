@@ -7,7 +7,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/orders")
+        fetch("https://infinite-shelf-56932.herokuapp.com/orders")
             .then((res) => res.json())
             .then((data) => filterOrders(data));
     }, []);
@@ -93,7 +93,7 @@ export default Orders;
 //     // console.log(detail);
 
 //     // useEffect(() => {
-//     //     const url = `http://localhost:8000/checkout/${_id}`
+//     //     const url = `https://infinite-shelf-56932.herokuapp.com/checkout/${_id}`
 //     //     fetch(url)
 //     //         .then(res => res.json())
 //     //         .then(data => setDetail(data))

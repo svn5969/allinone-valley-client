@@ -18,7 +18,7 @@ const CheckOut = () => {
     console.log(detail);
 
     useEffect(() => {
-        const url = `http://localhost:8000/checkout/${_id}`
+        const url = `https://infinite-shelf-56932.herokuapp.com/checkout/${_id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setDetail(data))
@@ -28,7 +28,7 @@ const CheckOut = () => {
         const orderDetails = {
             Product_Name,Product_Price,Product_Weight,...loggedInUser,orderTime: new Date()
         }
-        const url = `http://localhost:8000/addOrder`
+        const url = `https://infinite-shelf-56932.herokuapp.com/addOrder`
         fetch(url,{
             method: 'POST',
             headers: {

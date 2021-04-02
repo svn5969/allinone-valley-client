@@ -16,7 +16,7 @@ const AddProduct = () => {
        Product_Price:data.Product_Price,
        imageURL:imageURL
    }
-   const url = `http://localhost:8000/addProduct`
+   const url = `https://infinite-shelf-56932.herokuapp.com/addProduct`
 
 
    fetch(url,{
