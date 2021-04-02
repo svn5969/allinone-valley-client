@@ -44,16 +44,18 @@ function App() {
         </nav> */}
 
         <Switch>
-          <Route path="/addProduct">
+          <PrivateRoute path="/addProduct">
          <AddProduct></AddProduct>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/order">
-        <Order></Order>
-          </Route>
+        
 
           <PrivateRoute path="/checkout/:_id">
        <CheckOut></CheckOut>
+          </PrivateRoute>
+
+          <PrivateRoute path="/orders">
+            <Order></Order>
           </PrivateRoute>
 
           <Route path="/signin">

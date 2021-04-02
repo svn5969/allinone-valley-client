@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 import { useForm } from "react-hook-form";
+import { Button, Form } from "react-bootstrap";
 
 
 const AddProduct = () => {
@@ -43,8 +44,53 @@ const AddProduct = () => {
       });
   }
     return (
-        <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="container">
+
+
+<h3 style={{ textAlign: "center" }}>Add Product</h3>
+            <Form onSubmit={handleSubmit(onSubmit)}>
+                <Form.Group>
+                    <Form.Label>Product name</Form.Label>
+                    <Form.Control
+                        name="Product_Name"
+                        placeholder="Product Name"
+                        ref={register}
+                    />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Product Wight</Form.Label>
+                    <Form.Control
+                        name="Product_Weight"
+                        placeholder="Product wight"
+                        ref={register}
+                    />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Product price</Form.Label>
+                    <Form.Control
+                        name="Product_Price"
+                        placeholder="Product price"
+                        ref={register}
+                    />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Product Image</Form.Label>
+                    <Form.Control
+                        name="exampleRequired"
+                        type="file"
+                        onChange={handleImageUpload}
+                    />
+                </Form.Group>
+              
+                <input className="btn btn-primary" type="submit" />
+            </Form>
+
+
+
+
+
+
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
    
       <input name="Product_Name" defaultValue="Name" ref={register} />
       <input name="Product_Weight" defaultValue="Weight" ref={register} />
@@ -56,7 +102,7 @@ const AddProduct = () => {
      
       
       <input type="submit" />
-    </form> 
+    </form>  */}
         </div>
     );
 };

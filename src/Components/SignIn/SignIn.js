@@ -144,11 +144,10 @@ const SignIn = () =>
                 <hr />
                <div className="ml-5 pl-5">
                <img style={{width:'40px',height:'40px'}} onClick={handleGoogleSignIn} src={google} alt=""/>
-                {/* <button onClick={handleGoogleSignIn} className="w-100 btn btn-lg btn-outline-success mb-2" type="submit">Connect with Google</button> */}
-                <img style={{width:'30px',height:'30px'}} onClick={handleGitHubSignIn} src={git} alt=""/>
+               
+                {/* <img style={{width:'30px',height:'30px'}} onClick={handleGitHubSignIn} src={git} alt=""/> */}
                 <img style={{width:'30px',height:'30px'}} onClick={handleFacebookSignIn} src={fbLogo} alt=""/>
-{/* 
-                <button onClick={handleGitHubSignIn} className="w-100 btn btn-lg btn-outline-success mb-2" type="submit">Connect with GitHub</button> */}
+
                </div>
             </form>
             {
